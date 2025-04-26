@@ -50,7 +50,7 @@ export default function Auth() {
 
       // Add loading delay before navigating to the dashboard
       setTimeout(() => {
-        if(response.isAdmin)
+        if(data.user.isAdmin==true)
         {
             router.push("/admin/dashboard");
         }
