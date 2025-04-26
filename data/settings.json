@@ -1,0 +1,24 @@
+{
+  "storeName": "The Pizza Delight",
+  "address": "123 Pizza Street, New York, NY 10001",
+  "phone": "(555) 123-4567",
+  "email": "contact@thepizzadelight.com",
+  "openingHours": {
+    "monday": "11:00 AM - 10:00 PM",
+    "tuesday": "11:00 AM - 10:00 PM",
+    "wednesday": "11:00 AM - 10:00 PM",
+    "thursday": "11:00 AM - 10:00 PM",
+    "friday": "11:00 AM - 11:00 PM",
+    "saturday": "11:00 AM - 11:00 PM",
+    "sunday": "12:00 PM - 9:00 PM"
+  },
+  "deliveryFee": 3.99,
+  "taxRate": 8.875,
+  "minimumOrderAmount": 50,
+  "deliveryRadius": 5,
+  "socialMedia": {
+    "facebook": "https://facebook.com/thepizzadelight",
+    "instagram": "https://instagram.com/thepizzadelight",
+    "twitter": "https://twitter.com/thepizzadelight"
+  }
+}

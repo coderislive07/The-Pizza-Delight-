@@ -1,0 +1,121 @@
+/* Pizza loader animation */
+.pizza-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pizza-base {
+    width: 120px;
+    height: 120px;
+    background-color: #f0c78e;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    animation: rotate 3s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .pizza-slice {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform-origin: bottom center;
+  }
+  
+  .slice-1 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+  }
+  
+  .slice-2 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+    transform: rotate(60deg);
+  }
+  
+  .slice-3 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+    transform: rotate(120deg);
+  }
+  
+  .slice-4 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+    transform: rotate(180deg);
+  }
+  
+  .slice-5 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+    transform: rotate(240deg);
+  }
+  
+  .slice-6 {
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent #d62828 transparent;
+    top: 0;
+    left: 30px;
+    transform: rotate(300deg);
+  }
+  
+  .loading-text {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #d62828;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b21e1e;
+  }
+  
