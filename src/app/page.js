@@ -1,7 +1,7 @@
 import Image from "next/image";
-
+import HeroSection from "./components/heroSection";
 export default function Home() {
   return (
- <div className="text-8xl text-red-700">Hi</div>
+ <HeroSection></HeroSection>
   );
 }
