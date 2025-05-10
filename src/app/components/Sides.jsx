@@ -19,7 +19,7 @@ import img16 from "../../../public/sides (2).png";
 import img17 from "../../../public/sides (1).png";
 
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Plus } from 'lucide-react';
 
 export default function SidesMenu() {
@@ -172,7 +172,9 @@ export default function SidesMenu() {
                     height={96}
                     className="w-30 h-30 object-cover"
                 />
-
+                <button className="absolute top-0 right-0 bg-white rounded-full p-1 shadow-md">
+                    <Plus size={16} className="text-gray-500" />
+                </button>
                 {/*<button className="absolute top-0 right-0 bg-white rounded-full p-1 shadow-md">*/}
                 {/*    <Plus size={16} className="text-gray-500" />*/}
                 {/*</button>*/}

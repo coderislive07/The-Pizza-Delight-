@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 import { Plus } from 'lucide-react';
 import img1 from "../../../public/ice (3).png";
@@ -70,6 +70,9 @@ export default function IceCreamMenu() {
                     height={96}
                     className="w-30 h-30 object-cover"
                 />
+                <button className="absolute top-0 right-0 bg-white rounded-full p-1 shadow-md">
+                    <Plus size={16} className="text-gray-500" />
+                </button>
 
                 <button
                     className={`absolute bottom-0 right-0 w-6 h-6 rounded-full border-2 ${selectedItems[index] ? 'bg-amber-800 border-amber-800' : 'bg-white border-gray-300'}`}
