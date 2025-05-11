@@ -47,7 +47,8 @@ export default function SidesMenu() {
         {
             name: "ARANCINI BALLS",
             description: "Crispy Risotto Bites Filled With Cheese And Herbs — Italian-Style Perfection.",
-            isVeg: img4
+            isVeg: true,
+            image:img4
         },
         {
             name: "SMOKE CHIPOTLE SWEET POTATO BITE",

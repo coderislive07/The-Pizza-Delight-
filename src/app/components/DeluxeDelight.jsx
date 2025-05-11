@@ -1,5 +1,9 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 import { Plus } from "lucide-react"
+import PizzaModal from "./pizza-modal"
 import img1 from "../../../public/DeluxeDelight/1.png"
 import img2 from "../../../public/DeluxeDelight/2.png"
 import img3 from "../../../public/DeluxeDelight/3.png"
@@ -18,9 +22,13 @@ import img15 from "../../../public/DeluxeDelight/15.png"
 import img16 from "../../../public/DeluxeDelight/16.png"
 import img17 from "../../../public/DeluxeDelight/17.png"
 import img18 from "../../../public/DeluxeDelight/18.png"
-import img19 from "../../../public/DeluxeDelight/19.png"
+import img19 from "../../../public/DeluxeDelight/19.png"    
 
 export default function DeluxeDelight() {
+  const [activeIndex, setActiveIndex] = useState(null)
+  const [selectedItems, setSelectedItems] = useState({})
+  const [cart, setCart] = useState([])
+
   const pizzaData = [
     {
       title: "VEGGIE LOVERS DELIGHT",
@@ -157,8 +165,37 @@ export default function DeluxeDelight() {
     },
   ]
 
+  const toggleSelection = (index) => {
+    setSelectedItems((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }))
+  }
+
+  const handleAddToCart = (selections) => {
+    // Add the selections to the cart
+    setCart((prevCart) => [...prevCart, selections])
+    // Close the modal
+    setActiveIndex(null)
+    // Show a confirmation message
+    alert("Pizza added to cart!")
+  }
+
   return (
     <div className="px-28 mx-auto bg-[#F9F3E6] p-6 relative">
+      {/* Pizza Modal */}
+      {activeIndex !== null && (
+        <PizzaModal
+          isOpen={activeIndex !== null}
+          onClose={() => setActiveIndex(null)}
+          pizzaItem={pizzaData[activeIndex]}
+          onAddToCart={handleAddToCart}
+          allPizzas={pizzaData}
+          currentIndex={activeIndex}
+          onNavigate={setActiveIndex}
+        />
+      )}
+
       {/* Plus icons in corners */}
       <div className="absolute top-2 right-2">
         <Plus size={20} className="text-[#663300]" />
@@ -190,14 +227,24 @@ export default function DeluxeDelight() {
             </div>
 
             <div className="relative">
-              <Image
-                src={pizza.image || "/placeholder.svg"}
-                alt={pizza.title}
-                width={100}
-                height={100}
-                className="object-cover rounded-md"
-              />
-              <div className="absolute bottom-0 right-0 w-6 h-6 rounded-full border-2 border-gray-300 bg-white"></div>
+              <button onClick={() => setActiveIndex(index)}>
+                <Image
+                  src={pizza.image || "/placeholder.svg"}
+                  alt={pizza.title}
+                  width={100}
+                  height={100}
+                  className="object-cover rounded-md"
+                />
+              </button>
+              <button
+                className={`absolute bottom-0 right-0 w-6 h-6 rounded-full border-2 ${
+                  selectedItems[index] ? "bg-[#663300] border-amber-800" : "bg-white border-gray-300"
+                }`}
+                onClick={() => toggleSelection(index)}
+                aria-label="Select item"
+              >
+                {selectedItems[index] && <div className="w-2 h-2 bg-white rounded-full mx-auto"></div>}
+              </button>
             </div>
           </div>
         ))}
