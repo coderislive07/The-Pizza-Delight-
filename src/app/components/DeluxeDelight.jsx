@@ -161,15 +161,15 @@ export default function DeluxeDelight() {
     <div className="px-28 mx-auto bg-[#F9F3E6] p-6 relative">
       {/* Plus icons in corners */}
       <div className="absolute top-2 right-2">
-        <Plus size={20} className="text-amber-800" />
+        <Plus size={20} className="text-[#663300]" />
       </div>
       <div className="absolute bottom-2 right-2">
-        <Plus size={20} className="text-amber-800" />
+        <Plus size={20} className="text-[#663300]" />
       </div>
 
       <div className="text-center mb-8">
-        <div className="inline-block bg-white rounded-full px-8 py-2 mb-6">
-          <h2 className="text-xl font-bold text-amber-800">DELUXE DELIGHTS</h2>
+        <div className="inline-block bg-white border border-[#663300] rounded-full px-8 py-2 mb-6">
+          <h2 className="text-xl font-bold text-[#663300]">DELUXE DELIGHTS</h2>
         </div>
       </div>
 
@@ -177,7 +177,7 @@ export default function DeluxeDelight() {
         {pizzaData.map((pizza, index) => (
           <div key={index} className="flex justify-between items-start mb-2 relative">
             <div className="flex-1 pr-4 max-w-[400px]">
-              <h2 className="text-lg font-bold text-amber-800 mb-1">{pizza.title}</h2>
+              <h2 className="text-lg font-bold text-[#663300] mb-1">{pizza.title}</h2>
               <p className="text-xs text-gray-700 mb-2">{pizza.description}</p>
               <div className="flex items-center">
                 <div
