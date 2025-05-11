@@ -102,8 +102,8 @@ function NavItem({ text }) {
 function FeatureItem({ icon, text, active = false }) {
   return (
     <div className="flex items-center space-x-3">
-      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${active ? 'bg-[#663300]' : 'bg-white border border-[#663300]'}`}>
-        <Image src={icon || "/placeholder.svg"} alt={text} className="w-5 h-5" />
+      <div className={`w-8 h-8 rounded-full flex items-center justify-center `}>
+        <Image src={icon || "/placeholder.svg"} alt={text} className="w-8 h-8" />
       </div>
       <span className="text-[#663300] font-medium">{text}</span>
     </div>

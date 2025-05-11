@@ -342,7 +342,7 @@ export default function CreativeDelightsMenu() {
     const renderPizzaItem = (item, index) => (
         <div key={index} className="flex justify-between items-start mb-8 relative">
             <div className="flex-1 pr-4 max-w-[400px]">
-                <h2 className="text-lg font-bold text-amber-800 mb-1">{item.name}</h2>
+                <h2 className="text-lg font-bold text-[#663300] mb-1">{item.name}</h2>
                 <p className="text-sm text-gray-700 mb-2">{item.description}</p>
                 <div className="flex items-center">
                     <div
@@ -369,7 +369,7 @@ export default function CreativeDelightsMenu() {
                 </button>
                 <button
                     className={`absolute bottom-0 right-0 w-6 h-6 rounded-full border-2 ${
-                        selectedItems[index] ? "bg-amber-800 border-amber-800" : "bg-white border-gray-300"
+                        selectedItems[index] ? "bg-[#663300] border-amber-800" : "bg-white border-gray-300"
                     }`}
                     onClick={() => toggleSelection(index)}
                     aria-label="Select item"
@@ -389,9 +389,9 @@ export default function CreativeDelightsMenu() {
                 >
                     <div className="bg-white w-full h-[98%] max-w-md rounded-lg overflow-hidden shadow-xl">
                         {/* Header */}
-                        <div className="bg-amber-800 px-4 py-2 flex justify-between items-center">
+                        <div className="bg-[#663300] px-4 py-2 flex justify-between items-center">
                             <div className="flex items-center">
-                                <div className="bg-white text-amber-800 rounded-sm px-3 py-1 text-xs font-bold">
+                                <div className="bg-white text-[#663300] rounded-sm px-3 py-1 text-xs font-bold">
                                     {pizzaItems[activeIndex].name}
                                 </div>
                             </div>
@@ -463,7 +463,7 @@ export default function CreativeDelightsMenu() {
                                                                 selectedSize === idx ? "border-amber-800" : "border-gray-300"
                                                             } flex items-center justify-center mr-2`}
                                                         >
-                                                            {selectedSize === idx && <div className="w-2 h-2 rounded-full bg-amber-800"></div>}
+                                                            {selectedSize === idx && <div className="w-2 h-2 rounded-full bg-[#663300]"></div>}
                                                         </div>
                                                         <span className="text-sm">{option.name}</span>
                                                     </div>
@@ -504,7 +504,7 @@ export default function CreativeDelightsMenu() {
                                                                 selectedBase === idx ? "border-amber-800" : "border-gray-300"
                                                             } flex items-center justify-center mr-2`}
                                                         >
-                                                            {selectedBase === idx && <div className="w-2 h-2 rounded-full bg-amber-800"></div>}
+                                                            {selectedBase === idx && <div className="w-2 h-2 rounded-full bg-[#663300]"></div>}
                                                         </div>
                                                         <span className="text-sm">{option.name}</span>
                                                     </div>
@@ -557,7 +557,7 @@ export default function CreativeDelightsMenu() {
                                                                     <div
                                                                         className={`w-4 h-4 rounded-sm border ${
                                                                             isCustomizeOptionSelected("meats", option.name)
-                                                                                ? "border-amber-800 bg-amber-800"
+                                                                                ? "border-amber-800 bg-[#663300]"
                                                                                 : "border-gray-300"
                                                                         } mr-2 cursor-pointer`}
                                                                         onClick={(e) => {
@@ -620,7 +620,7 @@ export default function CreativeDelightsMenu() {
                                                                     <div
                                                                         className={`w-4 h-4 rounded-sm border ${
                                                                             isCustomizeOptionSelected("vegProteins", option.name)
-                                                                                ? "border-amber-800 bg-amber-800"
+                                                                                ? "border-amber-800 bg-[#663300]"
                                                                                 : "border-gray-300"
                                                                         } mr-2 cursor-pointer`}
                                                                         onClick={(e) => {
@@ -683,7 +683,7 @@ export default function CreativeDelightsMenu() {
                                                                     <div
                                                                         className={`w-4 h-4 rounded-sm border ${
                                                                             isCustomizeOptionSelected("cheese", option.name)
-                                                                                ? "border-amber-800 bg-amber-800"
+                                                                                ? "border-amber-800 bg-[#663300]"
                                                                                 : "border-gray-300"
                                                                         } mr-2 cursor-pointer`}
                                                                         onClick={(e) => {
@@ -746,7 +746,7 @@ export default function CreativeDelightsMenu() {
                                                                     <div
                                                                         className={`w-4 h-4 rounded-sm border ${
                                                                             isCustomizeOptionSelected("sauces", option.name)
-                                                                                ? "border-amber-800 bg-amber-800"
+                                                                                ? "border-amber-800 bg-[#663300]"
                                                                                 : "border-gray-300"
                                                                         } mr-2 cursor-pointer`}
                                                                         onClick={(e) => {
@@ -809,7 +809,7 @@ export default function CreativeDelightsMenu() {
                                                                     <div
                                                                         className={`w-4 h-4 rounded-sm border ${
                                                                             isCustomizeOptionSelected("herbs", option.name)
-                                                                                ? "border-amber-800 bg-amber-800"
+                                                                                ? "border-amber-800 bg-[#663300]"
                                                                                 : "border-gray-300"
                                                                         } mr-2 cursor-pointer`}
                                                                         onClick={(e) => {
@@ -888,7 +888,7 @@ export default function CreativeDelightsMenu() {
                                                 </div>
                                             </div>
                                             <button
-                                                className="w-full bg-amber-800 text-white py-3 rounded-md font-medium hover:bg-amber-700 transition-colors"
+                                                className="w-full bg-[#663300] text-white py-3 rounded-md font-medium hover:bg-amber-700 transition-colors"
                                                 onClick={() => {
                                                     // Add to cart logic here
                                                     alert("Pizza added to cart!")
@@ -911,9 +911,9 @@ export default function CreativeDelightsMenu() {
                 </div>
             )}
 
-            <div className="px-28 mx-auto bg-white p-6">
+            <div className="px-28 mx-auto bg-[#F9F3E6] p-6">
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold text-amber-800 inline-block px-12 py-2 border-2 border-amber-800 rounded-full">
+                    <h1 className="text-3xl font-bold text-[#663300] bg-white inline-block px-12 py-2 border-2 border-[#663300] rounded-full">
                         CREATIVE DELIGHTS
                     </h1>
                 </div>

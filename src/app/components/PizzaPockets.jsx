@@ -35,7 +35,9 @@ export default function PizzaPockets() {
                   Crispy Shell.
                 </p>
                 <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-green-600 text-green-600" />
+                  <div className="p-1 border border-green-500">
+                  <Circle className="w-3 h-3 fill-green-600 text-green-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">100% VEG</span>
                 </div>
               </div>
@@ -59,13 +61,15 @@ export default function PizzaPockets() {
                   Spicy Pepperoni And Melty Mozzarella Packed Inside A Crispy, Handheld Crust — A Meaty Favorite.
                 </p>
                 <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-red-600 text-red-600" />
+                  <div className="p-1 border border-red-500">
+                  <Circle className="w-3 h-3 fill-red-600 text-red-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">NON-VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket3 || "/placeholder.svg"}
+                  src={pocket2 || "/placeholder.svg"}
                   alt="Pepperoni Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -82,14 +86,16 @@ export default function PizzaPockets() {
                 <p className="text-sm mt-1 text-[#5A3800]">
                   Tender Beef, Black Olives, And Onion With Herbs And Cheese, Folded Into A Savory Golden Crust.
                 </p>
-                <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-red-600 text-red-600" />
+               <div className="mt-2 flex items-center">
+                  <div className="p-1 border border-red-500">
+                  <Circle className="w-3 h-3 fill-red-600 text-red-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">NON-VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket5 || "/placeholder.svg"}
+                  src={pocket3 || "/placeholder.svg"}
                   alt="Beef & Onion Delight Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -107,14 +113,16 @@ export default function PizzaPockets() {
                   Marinated Baked Chicken With Capsicum, Onion, And Garlic, Seasoned With Herbs And Stuffed With
                   Mozzarella.
                 </p>
-                <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-red-600 text-red-600" />
+              <div className="mt-2 flex items-center">
+                  <div className="p-1 border border-red-500">
+                  <Circle className="w-3 h-3 fill-red-600 text-red-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">NON-VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket7 || "/placeholder.svg"}
+                  src={pocket4 || "/placeholder.svg"}
                   alt="Chicken Delight Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -132,14 +140,16 @@ export default function PizzaPockets() {
                   Juicy Prawns And Shrimp With Garlic, Olives, And Cheese In A Creamy Fraiche Base — A Seafood Lover's
                   Dream.
                 </p>
-                <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-red-600 text-red-600" />
+               <div className="mt-2 flex items-center">
+                  <div className="p-1 border border-red-500">
+                  <Circle className="w-3 h-3 fill-red-600 text-red-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">NON-VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket9 || "/placeholder.svg"}
+                  src={pocket5 || "/placeholder.svg"}
                   alt="Seafood Delight Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -161,13 +171,15 @@ export default function PizzaPockets() {
                   Bite.
                 </p>
                 <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-green-600 text-green-600" />
+                  <div className="p-1 border border-green-500">
+                  <Circle className="w-3 h-3 fill-green-600 text-green-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">100% VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket2 || "/placeholder.svg"}
+                  src={pocket6 || "/placeholder.svg"}
                   alt="Onion & Cheese Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -185,13 +197,15 @@ export default function PizzaPockets() {
                   A Vibrant Mix Of Capsicum, Tomatoes, Onions, And Cheese Baked Into A Crisp Vegetarian Pocket.
                 </p>
                 <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-green-600 text-green-600" />
+                  <div className="p-1 border border-green-500">
+                  <Circle className="w-3 h-3 fill-green-600 text-green-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">100% VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket4 || "/placeholder.svg"}
+                  src={pocket7 || "/placeholder.svg"}
                   alt="Veggie Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -209,13 +223,15 @@ export default function PizzaPockets() {
                   Packed With Spiced Paneer, Onion, Garlic, Capsicum, And Cheese — A Pocket-Sized Desi Delight.
                 </p>
                 <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-green-600 text-green-600" />
+                  <div className="p-1 border border-green-500">
+                  <Circle className="w-3 h-3 fill-green-600 text-green-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">100% VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket6 || "/placeholder.svg"}
+                  src={pocket8 || "/placeholder.svg"}
                   alt="Veggie Paneer Delight Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -233,14 +249,16 @@ export default function PizzaPockets() {
                   Sweet And Savory Inside-Out: Pineapple, Apricot Glaze, Feta, And Baked Chicken All Stuffed In A Cheesy
                   Pocket.
                 </p>
-                <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-red-600 text-red-600" />
+              <div className="mt-2 flex items-center">
+                  <div className="p-1 border border-red-500">
+                  <Circle className="w-3 h-3 fill-red-600 text-red-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">NON-VEG</span>
                 </div>
               </div>
               <div className="relative">
                 <Image
-                  src={pocket8 || "/placeholder.svg"}
+                  src={pocket9 || "/placeholder.svg"}
                   alt="Apricot Chicken Delight Pizza Pocket"
                   className="w-32 h-32 object-contain"
                 />
@@ -258,8 +276,10 @@ export default function PizzaPockets() {
                   Filled With Bold Flavors: Spicy Chicken, Black Pepper, Jalapeños, Capsicum, And Sriracha Mayo All
                   Sealed Inside
                 </p>
-                <div className="mt-2 flex items-center">
-                  <Circle className="w-5 h-5 fill-green-600 text-green-600" />
+                 <div className="mt-2 flex items-center">
+                  <div className="p-1 border border-green-500">
+                  <Circle className="w-3 h-3 fill-green-600 text-green-600" />
+                  </div >
                   <span className="ml-1 text-xs text-[#5A3800]">100% VEG</span>
                 </div>
               </div>
