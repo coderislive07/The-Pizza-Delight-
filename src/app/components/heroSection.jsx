@@ -13,23 +13,23 @@ export default function HeroSection() {
   return (
     <div
     style={{ backgroundImage: `url(${headerbg.src})` }}
-    className="relative w-full bg-cover bg-center px-20"
+    className="relative w-full bg-cover bg-center px-0"
   >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-24 px-3 py-4">
         {/* Navigation Bar */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
           <div className="flex items-center">
             <Image src={logo || "/placeholder.svg"} alt="Logo" className="h-16 w-16" />
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <NavItem text="PIZZAS" />
-            <NavItem text="PASTA" />
-            <NavItem text="PIZZA POCKETS" />
-            <NavItem text="BAKED BREADS" />
-            <NavItem text="SIDES" />
-            <NavItem text="ICE CREAMS" />
-            <NavItem text="MILKSHAKES" />
+            <NavItem text="PIZZAS" id="#pizzas" />
+            <NavItem text="PASTA" id="#pastas" />
+            <NavItem text="PIZZA POCKETS" id="#pizzapockets" />
+            <NavItem text="BAKED BREADS" id="#bakedbreads" />
+            <NavItem text="SIDES" id="#sides" />
+            <NavItem text="ICE CREAMS" id="#icecreams" />
+            <NavItem text="MILKSHAKES" id="#milkshakes" />
           </div>
           
           <div className="flex items-center space-x-4">
@@ -91,9 +91,9 @@ export default function HeroSection() {
 }
 
 // Helper components
-function NavItem({ text }) {
+function NavItem({ text , id }) {
   return (
-    <a href="#" className="text-[#663300] font-medium hover:underline">
+    <a href={id} className="text-[#663300] font-medium hover:underline">
       {text}
     </a>
   )

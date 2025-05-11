@@ -85,7 +85,7 @@ export default function BasicDelight() {
   ]
 
   return (
-    <div className="px-28 mx-auto bg-[#F9F3E6] p-6 relative">
+    <div id="pizzas" className="px-28 mx-auto bg-[#F9F3E6] p-6 relative">
       {/* Plus icons in corners */}
       <div className="absolute top-2 right-2">
         <Plus size={20} className="text-amber-800" />

@@ -13,7 +13,7 @@ import { Plus, Circle } from "lucide-react"
 
 export default function PizzaPockets() {
   return (
-    <div className="bg-[#F9F3E6] p-8 min-h-screen">
+    <div id="pizzapockets" className="bg-[#F9F3E6] p-8 min-h-screen">
       <div className="max-w-[105rem] mx-auto">
         {/* Header */}
         <div className="flex justify-center mb-10">
